@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/79cd4a257f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Cards</title>
+</head>
+<body>
+    <!--<h1>Prateek Mobile<br /><span>Working Staff Cards</span></h1>-->
+
+    <div class="image-shadow js-tilt-container box center" style="background-image:url('/sqaure.jpg')">
+        
+    <img src="/manojChaurasiyaJi.jpg" alt="profile image" style="filter: brightness(120%);">
+    <div class="text">
+      <p class="user_name">Manoj Chaurasiya</p>
+      <p class="skill">Director <br><a href="#">Prateek Mobile</a></p>
+    </div>
+    <div class="arr_container center">
+      <i class="fas fa-level-up-alt fa-4px"></i>
+    </div>
+    <div class="left_container off">
+      <p>Responsibility</p>
+      <div class="skills">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="icons">
+        <a href="https://www.facebook.com/manojprateekmobile/" target="_blank" class="fab fa-facebook"></a>
+        <a href="#" target="_blank" class="fab fa-instagram"></a>
+        <a href="#" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://twitter.com/manojkchaurasiy" target="_blank" class="fab fa-twitter"></a>
+      </div>
+      <div class="cancel center">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+
+    <div class="light"></div>
+    <div class="blax"></div>
+    <script src="/script.js"></script>
+    <script>
+      
+  const clc = document.querySelector(".cancel");
+const arr = document.querySelector(".arr_container");
+const left_container = document.querySelector(".left_container");
+
+arr.addEventListener("click", () => {
+  arr.classList.add("active_arr");
+  if (left_container.classList.contains("off")) {
+    left_container.classList.remove("off");
+    left_container.classList.add("active");
+  }
+});
+
+clc.addEventListener("click", () => {
+  arr.classList.remove("active_arr");
+  if (left_container.classList.contains("active")) {
+    left_container.classList.remove("off");
+    left_container.classList.add("off");
+  }
+});
+
+    </script>
+</body>
+</html>
